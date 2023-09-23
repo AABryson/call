@@ -1,0 +1,82 @@
+
+
+h1 {
+    position: relative;
+    top: 10px;
+    text-align: center;
+
+}
+
+form {
+    
+    background-color: brown;
+    top: 100px;
+    height: 150px;
+    width: 100%;
+}
+
+label {
+    position: absolute;
+    margin-top: 10px;
+    left: 10px;
+    font-size: 20px;
+}
+
+input {
+    position: absolute;
+    margin-top: 10px;
+    left: 150px;
+    width: 250px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    position: absolute;
+    left: 100px;
+    border-width: 1px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+    position: relative;
+    top: 230px;
+}
+
+
+img {
+    width: 300px;
+    height: 200px;
+    
+   
+}
+
+.first {
+    position:absolute;
+    top: 0px;
+    color: blue;
+    font-size: 40px;
+    
+}
+
+.second{
+    position: absolute;
+    top: 20px;
+    color: whitesmoke;
+    font-size: 40px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
