@@ -1,14 +1,49 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementsByTagName('form');
-    const div= document.getElementsByTagName('div');
-    const url = document.getElementById('url');
-    const tptxt = document.getElementById('tptxt');
-    const bottxt = document.getElementById('bottxt');
+    
   
+    
+  function forappend(val1, val2, val3) {
+    //select div to append to
+    const div = document.createElement('div')
+    //a.b. set size of container in html for image
+    const mn = document.querySelector('main');
+    mn.append(div)
+    const image = document.createElement('img')
+    image.src = val1;
+    div.append(image);
+   
+
+    //set css properties for this container for the text or just add text to div
+    
+    const b1 = document.createElement('b');
+    b1.classList.add('b1')
+    b1.textContent = val2;
+    div.append(b1);
+    
+
+    const b2 = document.createElement('b');
+    b2.classList.add('b2')
+    b2.textContent = val3;
+    div.append(b2)
+
+   
+    
+
+    //reset
+    url.value = '';
+    tptxt.value = '';
+    bottxt.value = '';
+  }
+
   document.addEventListener('submit', function(event){
     event.preventDefault()
+    //select elements
+    const url = document.querySelector('#url');
+    const tptxt = document.querySelector('#tptxt');
+    const bottxt = document.querySelector('#bottxt');
    
+    //assign input values
     const urlval = url.value;
     console.log(urlval);
 
@@ -18,57 +53,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const bottxtval = bottxt.value;
     console.log(bottxtval);
 
-    let div = document.querySelector('div')
-    console.log(div)
-    
-    const image = document.createElement('img')
-    image.src = urlval
-
-    div.append(image)
-   
-    const h2o = document.createElement('h2');
-    h2o.classList.add('first')
-   
-    h2o.textContent = tptxtval;
-    console.log(h2o)
-    
-    div.append(h2o);
-
-    let h3o = document.createElement('h2');
-    h3o.classList.add('second')
-    h3o.textContent = bottxtval;
-    console.log(h3o)
-
-    div.append(h3o)
-
-    url.value = '';
-    tptxt.value = '';
-    bottxt.value = '';
+    //call function to append
+    forappend(urlval, tptxtval, bottxtval)
+  
   })
-  document.addEventListener('click', function(event){
+  
+  document.addEventListener('click', function(event) {
+    const eventtarget = event.target.tagName.toLowerCase();
     console.log(event);
-    const tar = event.target('img')
-    if(tar === 'img') {
-      tar.remove()
+    if (eventtarget === 'img') {
+      event.target.parentElement.remove();
+    } else {
+
     }
-
-
   })
-})
 
-//document.addEventListener('click', function(event){
-    //event.preventDefault();
-    //if(event.target.tagName === 'IMG') {
-     //   alert('stop that')
-   // }
-    //} else if {
-        
-
-   // }
-//})
-
-
-
-
-
-
+})  

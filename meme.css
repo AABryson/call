@@ -1,18 +1,30 @@
-
+*{
+    box-sizing: content-box;
+}
 
 h1 {
     position: relative;
     top: 10px;
-    text-align: center;
 
+    color:azure;
+    text-align: center;
+    border-style: double;
+    border-width: 6px;
+    border-color: azure;
+    font-family: Comfortaa;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #4C516D;
 }
 
 form {
-    
-    background-color: brown;
+    background-color: firebrick;
     top: 100px;
     height: 150px;
     width: 100%;
+    border-style:double;
+    border-color: antiquewhite;
+    border-width: 2px;
 }
 
 label {
@@ -20,52 +32,85 @@ label {
     margin-top: 10px;
     left: 10px;
     font-size: 20px;
+    font-weight:bolder;
+    font-family: Marcellus;
 }
 
 input {
     position: absolute;
     margin-top: 10px;
-    left: 150px;
-    width: 250px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 160px;
+    width: 300px;
+    font-family: Marcellus;
 }
 
 button {
     position: absolute;
     left: 100px;
-    border-width: 1px;
-    margin-top: 20px;
+    border-width: 2px;
+    margin-top: 15px;
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #4C516D;
+    color:azure;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 div {
     position: relative;
-    top: 230px;
-}
+    height: 400px;
+    width: 50%;
+    margin: 0;
+    display: inline-block;
 
+}
 
 img {
-    width: 300px;
-    height: 200px;
-    
-   
-}
-
-.first {
-    position:absolute;
-    top: 0px;
-    color: blue;
-    font-size: 40px;
-    
-}
-
-.second{
     position: absolute;
-    top: 20px;
-    color: whitesmoke;
-    font-size: 40px
+    display: inline-block;
+    width: 90%;
+    height: 60%;
+    left: 4%;
+    top: 5%;
 }
+    
+.b1 {
+    color:antiquewhite;
+    position: absolute;
+    top: 5%;
+    font-family: Daytona;
+    height: 25%; 
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    text-wrap: wrap;
+    display: inline-block;
+    font-size: 30px;
+    text-shadow: .5px .5px darkslategrey;
+    font-weight:500;
+}
+
+.b2 {
+    color: antiquewhite;
+    position: absolute;
+    bottom: 30%;
+    font-family: Daytona;
+    height: 25%; 
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: .5px .5px darkslategrey;
+    font-weight:500;
+}
+
+
+
 
 
 
